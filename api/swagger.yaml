@@ -1,0 +1,47 @@
+---
+swagger: "2.0"
+info:
+  description: "[Specification JSON](/api-spec)"
+  version: "2.0.0"
+  title: "iterm-api"
+paths:
+  /users/users/:
+    get:
+      tags:
+      - "TestController"
+      summary: "/users/users/"
+      operationId: "usersUsersGET"
+      consumes:
+      - "application/json"
+      parameters: []
+      x-swagger-router-controller: "TestController"
+      responses: 
+        '200':
+          description: "Using Test Controller"
+
+  # /users/authenticate:
+  #   get:
+  #     summary: "/users/authenticate/"
+  #     description: ""
+  #     operationId: "usersAuthenticateGET"
+  #     consumes:
+  #     - "application/json"
+  #     parameters: []
+  #     x-swagger-router-controller: "Default"
+  # /users/login:
+  #   post:
+  #     summary: "/users/login"
+  #     operationId: "usersLoginPOST"
+  #     consumes:
+  #     - "application/json"
+  #     parameters: []
+  #     x-swagger-router-controller: "Default"
+  # /users/logout:
+  #   get:
+  #     summary: "/users/logout"
+  #     operationId: "usersLogoutGET"
+  #     consumes:
+  #     - "application/json"
+  #     parameters: []
+  #     x-swagger-router-controller: "Default"
+definitions: {}
